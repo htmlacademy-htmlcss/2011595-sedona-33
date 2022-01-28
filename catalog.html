@@ -20,7 +20,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list-user">
@@ -43,64 +43,68 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
-      <h1 class="inner-header-title">
-        Гостиницы Седоны
-      </h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">Каталог</li>
-      </ul>
-    </header>
-    <section class="catalog-hotels">
-      <h2 class="visually-hidden">
-        Список гостиниц с фильтрами.
-      </h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктура:</legend>
-          <label class="control">
-            <!-- Мне казалось, что возможно логичнее не делать бассейн и парковку "checked" потому что тогда
-     кнопка сбросить возвращает эти значения при нажатии, но сделал как в макете -->
-            <input class="control-input" type="checkbox" name="swimming pool" checked>
-            Бассейн
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="parking" checked>
-            Парковка
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="wi-fi">
-            Wi-Fi
-          </label>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип жилья:</legend>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-housing" checked>
-            Гостиница
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-housing">
-            Мотель
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-housing">
-            Аппартаменты
-          </label>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость,₽</legend>
-        </fieldset>
-        <button class="button" type="submit">
-          Применить
-        </button>
-        <button class="button" type="reset">
-          Сбросить
-        </button>
-      </form>
+    <div>
+      <header class="inner-header">
+        <h1 class="inner-header-title">
+          Гостиницы Седоны
+        </h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Перейти на главную страницу.</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">Гостиницы</li>
+        </ul>
+      </header>
+      <section class="catalog-hotels">
+        <h2 class="visually-hidden">
+          Список гостиниц с фильтрами.
+        </h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="swimming pool" checked>
+              Бассейн
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="parking" checked>
+              Парковка
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="wi-fi">
+              Wi-Fi
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-housing" checked>
+              Гостиница
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-housing">
+              Мотель
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-housing">
+              Аппартаменты
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость,₽</legend>
+          </fieldset>
+          <button class="button" type="submit">
+            Применить
+          </button>
+          <button class="button" type="reset">
+            Сбросить
+          </button>
+        </form>
+      </section>
+    </div>
+    <section>
       <h3>
         НАЙДЕНО ГОСТИНИЦ:38
       </h3>
@@ -128,12 +132,12 @@
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-type">От 4000 ₽</p>
           <a class="product-card-button button" href="#">Подробнее</a>
-          <button class="button button-favorites" type="submit">
+          <button class="button button-favorites" type="button">
             В избранное
           </button>
           <div>
             <img class="hotel-rating-pic" src="" alt="четыре звезды.">
-            <span class="hotel-rating">Рейтинг 8,5</span>
+            <p class="hotel-rating">Рейтинг 8,5</p>
           </div>
         </li>
         <li class="hotel-card">
@@ -144,12 +148,12 @@
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-type">От 3000 ₽</p>
           <a class="product-card-button button" href="#">Подробнее</a>
-          <button class="button button-favorites" type="submit">
+          <button class="button button-favorites" type="button">
             В избранное
           </button>
           <div>
             <img class="hotel-rating-pic" src="" alt="три звезды.">
-            <span class="hotel-rating">Рейтинг 8,9</span>
+            <p class="hotel-rating">Рейтинг 8,9</p>
           </div>
         </li>
         <li class="hotel-card">
@@ -161,12 +165,12 @@
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-type">От 2000 ₽</p>
           <a class="product-card-button button" href="#">Подробнее</a>
-          <button class="button button-favorites" type="submit">
+          <button class="button button-favorites" type="button">
             В избранное
           </button>
           <div>
             <img class="hotel-rating-pic" src="" alt="две звезды.">
-            <span class="hotel-rating">Рейтинг 9,2</span>
+            <p class="hotel-rating">Рейтинг 9,2</p>
           </div>
         </li>
         <li class="hotel-card">
@@ -177,17 +181,17 @@
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-type">От 3000 ₽</p>
           <a class="product-card-button button" href="#">Подробнее</a>
-          <button class="button button-favorites" type="submit">
+          <button class="button button-favorites" type="button">
             В избранное
           </button>
           <div>
             <img class="hotel-rating-pic" src="" alt="две звезды.">
-            <span class="hotel-rating">Рейтинг 9,2</span>
+            <p class="hotel-rating">Рейтинг 9,2</p>
           </div>
         </li>
       </ul>
       <button class="button button-load-more" type="button">
-        ЗАГРУЗИ ЕЩЁ
+        ЗАГРУЗИТЬ ЕЩЁ
       </button>
       <ul class="pagination">
         <li class="pagination-item">
@@ -222,9 +226,8 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
-    <section class="distribution">
+    <section class="footer-distribution">
       <h2>
         ПОДПИШИТЕСЬ НА РАССЫЛКУ
       </h2>
@@ -270,4 +273,5 @@
     </p>
   </footer>
 </body>
+
 </html>
