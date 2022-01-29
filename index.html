@@ -6,6 +6,7 @@
   <title>HTML Academy: Седона</title>
 </head>
 
+
 <body>
   <header class="page-header">
     <nav class="navigation">
@@ -164,25 +165,24 @@
       <button class="btn-search" type="button">Поиск гостиницы в Седоне</button>
     </section>
   </main>
-  <section class="distribution">
-    <h2>
-      ПОДПИШИТЕСЬ НА РАССЫЛКУ
-    </h2>
-    <p>
-      Только полезная информация и никакого спама, <br>
-      честное бойскаутское!
-    </p>
-    <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="visually-hidden">
-        Ваш e-mail.
-      <input type="email" name="distribution-email" placeholder="Ваш e-mail">
-    </label>
-      <button class="button" type="submit">
-        Подписаться
-      </button>
-    </form>
-  </section>
   <footer class="page-footer">
+    <section class="footer-distribution">
+      <h2>
+        ПОДПИШИТЕСЬ НА РАССЫЛКУ
+      </h2>
+      <p>
+        Только полезная информация и никакого спама, <br>
+        честное бойскаутское!
+      </p>
+      <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="white-email" class="visually-hidden">
+          Ваш e-mail. </label>
+        <input id="white-email" type="email" name="distribution-email" placeholder="Ваш e-mail">
+        <button class="button" type="submit">
+          Подписаться
+        </button>
+      </form>
+    </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Наши социальные сети.</h2>
       <ul class="footer-social-list">
@@ -208,8 +208,10 @@
     </div>
     <p class="footer-html-academy">
       <a class="footer-html-academy-pic" href="https://htmlacademy.ru/">
-        <img src="" alt="Разработано HTML академией."></a>
+        <img src="" alt="Разработано HTML академией.">
+      </a>
     </p>
   </footer>
 </body>
+
 </html>
