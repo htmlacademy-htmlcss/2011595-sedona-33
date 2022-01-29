@@ -94,6 +94,10 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,₽</legend>
+            <input id="white-price-low" type="number" value="0" placeholder="от">
+            <input id="white-price-max" type="number" value="9000" placeholder="до">
+            <input type="range" for="white-price-low" name="white-price-low" min="0" max="9000">
+            <input type="range" for="white-price-max" name="white-price-max" min="1" max="9001">
           </fieldset>
           <button class="button" type="submit">
             Применить
@@ -108,19 +112,19 @@
       <h3>
         НАЙДЕНО ГОСТИНИЦ:38
       </h3>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="popular">Сначала дешёвое</option>
-        <option value="cheap">Сначала популярное</option>
-        <option value="expensive">Сначала дорогое</option>
+      <select class="select-control" aria-label="Отсортировать гостиницы как:">
+        <option value="popular">Сначала дешёвые</option>
+        <option value="cheap">Сначала популярные</option>
+        <option value="expensive">Сначала дорогие</option>
       </select>
       <a href="#" class="button button-search">
-        <span class="visually-hidden">Показать карточки.</span>
+        <span class="visually-hidden">Показать карточки гостиниц.</span>
       </a>
       <a href="#" class="button button-search">
-        <span class="visually-hidden">Показать карточки с подписями.</span>
+        <span class="visually-hidden">Показать карточки гостиниц с подписями.</span>
       </a>
       <a href="#" class="button button-search">
-        <span class="visually-hidden">Показать список.</span>
+        <span class="visually-hidden">Показать список гостиниц.</span>
       </a>
       <ul>
         <li class="hotel-card">
@@ -215,7 +219,7 @@
       </ul>
       <div>
         Гостиниц на странице:
-        <select class="select-control" aria-label="Число гостиниц на странице:">
+        <select class="select-control" aria-label="Показать число гостиниц на странице:">
           <option value="one">1</option>
           <option value="two">2</option>
           <option value="three">3</option>
@@ -237,7 +241,8 @@
       </p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="white-email" class="visually-hidden">
-          Ваш e-mail. </label>
+          Ваш e-mail.
+        </label>
         <input id="white-email" type="email" name="distribution-email" placeholder="Ваш e-mail">
         <button class="button" type="submit">
           Подписаться
