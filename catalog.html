@@ -10,7 +10,8 @@
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Главный логотип сайта Седона." src="">
+        <img class="page-header-logo" src="images/header/logo.svg" width="139" height="70"
+          alt="Главный логотип сайта Седона.">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -94,9 +95,18 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,₽</legend>
-            <input class="catalog-price" type="number" value="0" placeholder="от">
-            <input class="catalog-price" type="number" value="9000" placeholder="до">
-            <input type="range" name="white-price" min="0" max="9000">
+            <label class="visually-hidden">
+              Поле для ввода минимальной стоимости.
+              <input class="catalog-price" type="number" value="0" placeholder="от">
+            </label>
+            <label class="visually-hidden">
+              Поле для ввода максимальной стоимости.
+              <input class="catalog-price" type="number" value="9000" placeholder="до">
+            </label>
+            <label class="visually-hidden">
+              Ползунок для ввода минимальной и максимальной стоимости.
+              <input type="range" name="white-price" min="0" max="9000">
+            </label>
           </fieldset>
           <button class="button" type="submit">
             Применить
@@ -128,7 +138,7 @@
       <ul>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src=""
+            <img class="hotel-card-image" src="images/hotels/hotel-amara.jpg" width="299" height="206"
               alt="Фотография гостиницы Amara Resort & Spa находящей на высоте в горах.">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
@@ -139,13 +149,14 @@
             В избранное
           </button>
           <div>
-            <img class="hotel-rating-pic" src="" alt="четыре звезды.">
+            <img class="hotel-rating-pic" src="images/hotels/stars4.svg" width="91" height="17" alt="четыре звезды.">
             <p class="hotel-rating">Рейтинг 8,5</p>
           </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="Фотография вида на горы из гостиницы Desert Quail Inn.">
+            <img class="hotel-card-image" src="images/hotels/hotel-desert.jpg" width="299" height="206"
+              alt="Фотография вида на горы из гостиницы Desert Quail Inn.">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="product-card-type">Гостиница</p>
@@ -155,13 +166,13 @@
             В избранное
           </button>
           <div>
-            <img class="hotel-rating-pic" src="" alt="три звезды.">
+            <img class="hotel-rating-pic" src="images/hotels/stars3.svg" width="68" height="17" alt="три звезды.">
             <p class="hotel-rating">Рейтинг 8,9</p>
           </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src=""
+            <img class="hotel-card-image" src="images/hotels/hotel-villas.jpg" width="299" height="206"
               alt="Фотография фасада здания гостиницы Villas at Poco Diablo с городом и горами на заднем фоне.">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
@@ -172,13 +183,14 @@
             В избранное
           </button>
           <div>
-            <img class="hotel-rating-pic" src="" alt="две звезды.">
+            <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
             <p class="hotel-rating">Рейтинг 9,2</p>
           </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="Фотография вида на долину с дорогой из гостиницы GreenTree Inn.">
+            <img class="hotel-card-image" src="images/hotels/hotel-green-tree.jpg" width="299" height="206"
+              alt="Фотография вида на долину с дорогой из гостиницы GreenTree Inn.">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="product-card-type">Гостиница</p>
@@ -188,7 +200,7 @@
             В избранное
           </button>
           <div>
-            <img class="hotel-rating-pic" src="" alt="две звезды.">
+            <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
             <p class="hotel-rating">Рейтинг 9,2</p>
           </div>
         </li>
@@ -273,7 +285,7 @@
     </div>
     <p class="footer-html-academy">
       <a class="footer-html-academy-pic" href="https://htmlacademy.ru/">
-        <img src="" alt="Разработано HTML академией.">
+        <img src="images/footer/logo-htmlacademy.svg" width="115" height="34" alt="Разработано HTML академией.">
       </a>
     </p>
   </footer>
