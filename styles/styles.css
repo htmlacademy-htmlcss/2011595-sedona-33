@@ -1,0 +1,553 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.header-button {
+  width: 160px;
+  height: 37px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #756257;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+
+.btn-search {
+  width: 575px;
+  height: 60px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #756257;
+  border-radius: 10px;
+  text-decoration: none;
+
+}
+
+.button-distribution {
+  width: 200px;
+  height: 61px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+  text-decoration: none;
+
+}
+
+.distribution-write {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.button-accept {
+  width: 160px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #83B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button-reset {
+  width: 160px;
+  height: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0)
+}
+
+.product-card-button {
+  /*кажется что с ссылкой/кнопкой что то не так визуально, не пойму в чем дело*/
+  width: 133px;
+  height: 37px;
+  background: #756257;
+  border-radius: 4px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-favorites {
+
+  width: 140.94px;
+  height: 37px;
+  background: #83B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.hotel-rating {
+  width: 160px;
+  height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+
+.button-load-more {
+
+  width: 620px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 4px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.page-header {
+  color: #000000;
+  background: #ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+  text-decoration-line: underline;
+  text-decoration-color: #756257;
+}
+
+
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("/images/largepic/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantage-intro {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.advantage-reasons {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantage {
+  width: 400px;
+  height: 384px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.advantage-blue {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantage-title-white {
+  color: #FFFFFF;
+}
+
+.advantage-description {
+  text-transform: none;
+}
+
+
+.advantage-item-dark-grey {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+
+.advantage-item-white-grey {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-blue-gray {
+  background: rgba(131, 179, 211, 0.2);
+
+}
+
+
+
+.search {
+  width: 1200px;
+  height: 417px;
+  text-align: center;
+}
+
+.search-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+.footer-distribution {
+  width: 1200px;
+  height: 411px;
+  text-align: center;
+  background: url(/images/footer/background-footer.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.distribution-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.distribution-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer-number {
+  height: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-social {
+  width: 18px;
+  height: 15px;
+
+}
+
+.footer-social-item {
+  list-style-type: none;
+}
+
+.button-twitter {
+  background: url(/images/footer/social-twitter.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.button-youtube {
+  background: url(/images/footer/social-youtube.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.button-facebook {
+  background: url(/images/footer/social-facebook.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.navigation-item {
+  list-style-type: none;
+}
+
+.navigation-link-search {
+  color: #000000;
+  background-color: #FFFFFF;
+  background: url(/images/header/search.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.navigation-link-favorites {
+  color: #000000;
+  background-color: #FFFFFF;
+  background: url(/images/header/favorites.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link {
+  color: #000000;
+  background-color: #FFFFFF;
+  background: url(/images/icons/icon-micro-house.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item {
+  list-style-type: none;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.main-inner-filter {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("/images/largepic/catalog-background-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+
+}
+
+.catalog-price {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  width: 143px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hotel-counter {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  /*  почему цвет из body не наследуется...? вот этот color: #333333;
+  */
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  width: 287px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hotel-card {
+  list-style-type: none;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  /*  у меня наследовалось из <a> в заголовок <h3> подчеркивание текста, поэтому так...*/
+}
+
+.hotel-card-title {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  background-color: #FFFFFF;
+
+}
+
+.product-card-type {
+  /*Чето не так со значком рубля, предполагаю что его нет в используемом шрифте*/
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+
+.pagination-link {
+  width: 55px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #83B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+
+}
+
+.hotel-on-page {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.select-control {
+  Width: 160px;
+  Height: 48px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.footer-distribution-catalog {
+  width: 1200px;
+  height: 411px;
+  text-align: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.distribution-title-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.distribution-text-catalog {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.footer-number-nolink {
+  color: #000000;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
