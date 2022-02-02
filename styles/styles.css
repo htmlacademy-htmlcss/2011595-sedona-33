@@ -2,15 +2,15 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -20,12 +20,13 @@ body {
   line-height: 21px;
   background-color: #FFFFFF;
   color: #333333;
+  margin: 0px;
 }
 
 .header-button {
   width: 160px;
   height: 37px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -36,13 +37,14 @@ body {
   background: #756257;
   border-radius: 4px;
   text-decoration: none;
-
+  padding: 0;
+  border: none;
 }
 
 .btn-search {
   width: 575px;
   height: 60px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -53,13 +55,14 @@ body {
   background: #756257;
   border-radius: 10px;
   text-decoration: none;
-
+  padding: 0;
+  border: none;
 }
 
 .button-distribution {
   width: 200px;
   height: 61px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -70,7 +73,8 @@ body {
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   text-decoration: none;
-
+  padding: 0;
+  border: none;
 }
 
 .distribution-write {
@@ -78,6 +82,8 @@ body {
   height: 60px;
   background: #F2F2F2;
   border-radius: 0px 10px 10px 0px;
+  padding: 0;
+  border: none;
 }
 
 .button-accept {
@@ -93,19 +99,20 @@ body {
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
+  padding: 0;
+  border: none;
 }
 
 .button-reset {
   width: 160px;
   height: 23px;
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
   color: #FFFFFF;
   background-color: rgba(0, 0, 0, 0);
-  border: rgba(0, 0, 0, 0)
+  border: rgba(0, 0, 0, 0);
 }
 
 .product-card-button {
@@ -126,13 +133,12 @@ body {
 }
 
 .button-favorites {
-
   width: 140.94px;
   height: 37px;
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -140,7 +146,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-
+  padding: 0;
+  border: none;
 }
 
 .hotel-rating {
@@ -148,7 +155,6 @@ body {
   height: 37px;
   background: #F2F2F2;
   border-radius: 4px;
-  font-weight: normal;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -163,7 +169,7 @@ body {
   height: 60px;
   background: #83B3D3;
   border-radius: 4px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -172,11 +178,8 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-}
-
-.page-header {
-  color: #000000;
-  background: #ffffff;
+  padding: 0;
+  border: none;
 }
 
 .navigation-link {
@@ -190,14 +193,11 @@ body {
 
 .navigation-link-current {
   text-decoration-line: underline;
-  text-decoration-color: #756257;
+  border: 2px solid #756257;
 }
 
-
-.main-index {
-  color: #000000;
-  background-color: #FFFFFF;
-  background-image: url("/images/largepic/index-background.jpg");
+.main-index-picture {
+  background-image: url("../images/largepic/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -211,26 +211,22 @@ body {
 }
 
 .advantage-reasons {
-  font-weight: 400;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  color: #333333;
 }
 
 .advantage {
   width: 400px;
   height: 384px;
-  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
-  list-style-type: none;
 }
 
 .advantage-blue {
   background-color: #83B3D3;
   color: #FFFFFF;
 }
-
 
 .advantage-title {
   font-size: 24px;
@@ -247,11 +243,15 @@ body {
   text-transform: none;
 }
 
+.advantage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .advantage-item-dark-grey {
   background: rgba(131, 179, 211, 0.12);
 }
-
 
 .advantage-item-white-grey {
   background: rgba(131, 179, 211, 0.12);
@@ -261,8 +261,6 @@ body {
   background: rgba(131, 179, 211, 0.2);
 
 }
-
-
 
 .search {
   width: 1200px;
@@ -279,17 +277,15 @@ body {
 }
 
 .search-text {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
-
 
 .footer-distribution {
   width: 1200px;
   height: 411px;
   text-align: center;
-  background: url(/images/footer/background-footer.jpg);
+  background-image: url("../images/footer/background-footer.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -304,7 +300,6 @@ body {
 }
 
 .distribution-text {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -314,7 +309,6 @@ body {
 .footer-number {
   height: 50px;
   font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -332,19 +326,19 @@ body {
 }
 
 .button-twitter {
-  background: url(/images/footer/social-twitter.svg);
+  background-image: url("../images/footer/social-twitter.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .button-youtube {
-  background: url(/images/footer/social-youtube.svg);
+  background-image: url("../images/footer/social-youtube.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .button-facebook {
-  background: url(/images/footer/social-facebook.svg);
+  background-image: url("../images/footer/social-facebook.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -356,7 +350,7 @@ body {
 .navigation-link-search {
   color: #000000;
   background-color: #FFFFFF;
-  background: url(/images/header/search.svg);
+  background-image: url("../images/header/search.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -364,7 +358,7 @@ body {
 .navigation-link-favorites {
   color: #000000;
   background-color: #FFFFFF;
-  background: url(/images/header/favorites.svg);
+  background-image: url("../images/header/favorites.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -372,7 +366,7 @@ body {
 .breadcrumbs-link {
   color: #000000;
   background-color: #FFFFFF;
-  background: url(/images/icons/icon-micro-house.svg);
+  background-image: url("../images/icons/icon-micro-house.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -394,7 +388,7 @@ body {
 .main-inner-filter {
   color: #FFFFFF;
   background-color: #000000;
-  background-image: url("/images/largepic/catalog-background-1.jpg");
+  background-image: url("../images/largepic/catalog-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -408,7 +402,6 @@ body {
 }
 
 .control-input {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
@@ -419,7 +412,6 @@ body {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 23px;
-  font-weight: 400;
   width: 143px;
   height: 48px;
   border: 2px solid #FFFFFF;
@@ -440,7 +432,6 @@ body {
   /*  почему цвет из body не наследуется...? вот этот color: #333333;
   */
   color: #333333;
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   width: 287px;
@@ -466,17 +457,14 @@ body {
   line-height: 31px;
   color: #000000;
   background-color: #FFFFFF;
-
 }
 
 .product-card-type {
   /*Чето не так со значком рубля, предполагаю что его нет в используемом шрифте*/
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
-
 
 .pagination-link {
   width: 55px;
@@ -490,9 +478,7 @@ body {
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
-
 }
-
 
 .pagination {
   list-style: none;
@@ -501,11 +487,9 @@ body {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
-
 }
 
 .hotel-on-page {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -538,7 +522,6 @@ body {
 }
 
 .distribution-text-catalog {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -550,4 +533,29 @@ body {
   color: #000000;
   text-decoration: none;
   background-color: #FFFFFF;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-user {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
