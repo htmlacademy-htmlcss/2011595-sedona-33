@@ -36,7 +36,6 @@ body {
   color: #ffffff;
   background: #756257;
   border-radius: 4px;
-  text-decoration: none;
   padding: 0;
   border: none;
 }
@@ -71,7 +70,6 @@ body {
   color: #ffffff;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
-  text-decoration: none;
   padding: 0;
   border: none;
 }
@@ -106,7 +104,6 @@ body {
   color: #ffffff;
   background: #83B3D3;
   border-radius: 4px;
-  text-decoration: none;
   padding: 0;
   border: none;
 }
@@ -124,7 +121,7 @@ body {
 }
 
 .product-card-button {
-  /*кажется что с ссылкой/кнопкой что то не так визуально, не пойму в чем дело*/
+  display: inline-block;
   width: 133px;
   height: 37px;
   background: #756257;
@@ -145,7 +142,6 @@ body {
   height: 37px;
   background: #83B3D3;
   border-radius: 4px;
-  text-decoration: none;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -185,7 +181,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  text-decoration: none;
   padding: 0;
   border: none;
 }
@@ -388,6 +383,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #FFFFFF;
+  font-size: 16px;
 }
 
 .inner-header-title {
@@ -413,11 +409,10 @@ body {
 
 }
 
-.control-input {
+.control {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-
 }
 
 .catalog-price {
@@ -479,6 +474,7 @@ body {
 }
 
 .pagination-link {
+  display: inline-block;
   width: 55px;
   height: 55px;
   font-weight: 700;
@@ -558,13 +554,8 @@ body {
   padding: 0;
 }
 
-.footer-social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .pagination {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -594,4 +585,14 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.catalog-filter-group {
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  inline-size: 0;
 }
