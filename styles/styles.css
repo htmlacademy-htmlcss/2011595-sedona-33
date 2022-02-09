@@ -46,15 +46,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-}
-
-.main-filter {
-  display: flex;
   padding-left: 70px;
   padding-right: 70px;
   width: 1060px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .header-button {
@@ -217,10 +212,7 @@ body {
   padding: 0;
   border: none;
   margin: 0 auto;
-}
-
-.button-load-more-container {
-  margin: 0 auto;
+  display: block;
 }
 
 .page-header-logo {
