@@ -30,17 +30,26 @@ body {
   margin: 0px;
 }
 
-.main-container {
+.main-inner {
   width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
 }
 
 .head-filter {
-  margin-left: 71px;
   display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
+.main-filter {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 1060px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .header-button {
   width: 160px;
@@ -205,7 +214,7 @@ body {
 }
 
 .button-load-more-container {
-  display: flex;
+  margin: 0 auto;
 }
 
 .page-header-logo {
@@ -405,11 +414,11 @@ body {
 .page-footer-container {
   margin: 0 auto;
   display: flex;
-  width: 1056px;
+  width: 1060px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .distribution-text {
@@ -505,20 +514,19 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  margin-left: 71px;
 }
 
 .main-inner-filter {
+  width: 1060px;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
   height: 408px;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/largepic/catalog-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.catalog-filter {
-  display: flex;
 }
 
 .catalog-filter-title {
@@ -570,16 +578,10 @@ body {
   border-radius: 4px;
 }
 
-.hotel-card-left {
-  margin-left: 72px;
-}
-
-.hotel-card-right {
-  margin-right: 72px;
-}
-
 .hotel-card {
-  width: 340px;
+  width: 300px;
+  padding: 20px;
+  height: 398px;
   list-style-type: none;
 }
 
@@ -615,10 +617,6 @@ body {
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
-}
-
-.pagination-item-first {
-  margin-left: 72px;
 }
 
 .pagination-item {
@@ -686,7 +684,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 73px;
 }
 
 .pagination {
@@ -696,12 +693,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 72px;
 }
 
 .hotel-cards-list {
   flex-wrap: wrap;
-  width: 1200px;
   justify-content: space-between;
   display: flex;
   list-style: none;
@@ -738,21 +733,4 @@ body {
   border: 0;
   padding: 0;
   inline-size: 0;
-}
-
-.catalog-filter-group-1 {
-  width: 150px;
-  margin-left: 71px;
-  margin-right: 61px;
-}
-
-.catalog-filter-group-2 {
-  margin: 0;
-  width: 144px;
-  margin-right: 167px;
-}
-
-.catalog-filter-group-3 {
-  width: 287px;
-  margin-right: 81px;
 }
