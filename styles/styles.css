@@ -59,7 +59,6 @@ body {
 .header-button {
   display: block;
   margin: 13px 0px 19px 0px;
-  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -71,6 +70,7 @@ body {
   background: #756257;
   border-radius: 4px;
   border: none;
+  padding: 9px 15px;
 }
 
 .btn-search {
@@ -159,7 +159,7 @@ body {
   height: 37px;
   background: #756257;
   border-radius: 4px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -171,7 +171,7 @@ body {
 }
 
 .button-favorites {
-  width: 140.94px;
+  width: 141px;
   height: 37px;
   background: #83B3D3;
   border-radius: 4px;
@@ -198,6 +198,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
+  margin: 0;
 }
 
 .button-load-more {
@@ -215,13 +216,12 @@ body {
   color: #FFFFFF;
   padding: 0;
   border: none;
-  margin: 0 auto;
+  margin: 64px auto 60px auto;
   display: block;
 }
 
 .page-header-logo {
   margin-right: 30px;
-  flex-grow: 0;
 }
 
 .navigation-list {
@@ -280,7 +280,7 @@ body {
 }
 
 .advantage-intro {
-  margin: 0;
+
   padding: 0;
   font-weight: 700;
   font-size: 30px;
@@ -289,6 +289,8 @@ body {
   color: #000000;
   margin-top: 61px;
   margin-bottom: 31px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .advantage-reasons {
@@ -296,9 +298,8 @@ body {
   line-height: 36px;
   text-align: center;
   color: #333333;
-  margin: 0;
+  margin: 0 0 80px 0;
   padding: 0;
-  margin-bottom: 80px;
 }
 
 .advantage-item-blue-gray {
@@ -317,13 +318,15 @@ body {
 
 .pic-advantage-1 {
   margin: 0;
-  width: 800;
+  width: 800px;
 }
 
 .pic-advantage-2 {
-  margin: 0;
-  width: 800;
+  width: 800px;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .advantage-blue {
@@ -369,7 +372,8 @@ body {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 49px;
   padding-bottom: 53px;
 }
@@ -433,9 +437,10 @@ body {
 }
 
 .advantage-title-pic {
-  margin: auto;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-distribution {
@@ -447,14 +452,6 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-}
-
-.footer-distribution-container {
-  height: 223px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding: 94px 200px;
 }
 
 .advantage-item-with-pic {
@@ -485,7 +482,6 @@ body {
   margin: 0 auto;
   display: flex;
   width: 1060px;
-  margin: 0 auto;
   justify-content: space-between;
   align-content: center;
   padding-left: 70px;
@@ -505,7 +501,9 @@ body {
 .footer-html-academy {
   margin-left: 51px;
   width: 115px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .footer-html-academy-pic {
@@ -560,7 +558,6 @@ body {
 }
 
 .navigation-item {
-  display: inherit;
   list-style-type: none;
 }
 
@@ -583,9 +580,9 @@ body {
 .breadcrumbs-link {
   color: #000000;
   background-color: #FFFFFF;
-  background-image: url("../images/icons/icon-micro-house.svg");
+  /*background-image: url("../images/icons/icon-micro-house.svg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .breadcrumbs-item {
@@ -597,7 +594,7 @@ body {
 }
 
 .inner-header-title {
-  margin: 0;
+  margin: 35px 0 5px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -615,6 +612,7 @@ body {
   background-image: url("../images/largepic/catalog-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
@@ -623,7 +621,6 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
-
 }
 
 .control {
@@ -645,13 +642,15 @@ body {
 }
 
 .hotel-counter {
-  margin: 0;
   margin-right: 192px;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .select-control-1 {
@@ -671,6 +670,9 @@ body {
   padding: 20px;
   height: 398px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-card-link {
@@ -684,9 +686,11 @@ body {
   line-height: 31px;
   color: #000000;
   background-color: #FFFFFF;
+  margin: 0;
 }
 
 .product-card-type {
+  margin: 0;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -742,8 +746,12 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1060px;
-  padding-left: 70px;
-  padding-right: 70px;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  padding: 73px 200px 140px 200px;
+  justify-content: space-between;
+
 }
 
 .distribution-title-catalog {
@@ -764,7 +772,6 @@ body {
   color: #333333;
   background-color: #ffffff;
   margin: 0;
-  padding: 46px 0px;
 }
 
 .footer-number-nolink {
@@ -776,6 +783,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 21px;
 }
 
 .pagination {
@@ -788,13 +796,14 @@ body {
 }
 
 .hotel-cards-list {
+  height: 886px;
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-
+  align-content: space-between;
 }
 
 .logo {
@@ -827,4 +836,68 @@ body {
   border: 0;
   padding: 0;
   inline-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-filter {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group-4 {
+  margin-top: 60px;
+  height: 91px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.catalog-filter-group-1 .catalog-filter-group {
+  height: 151px;
+}
+
+.catalog-filter-group-1 .catalog-filter-title {
+  margin-bottom: 30px;
+}
+
+.catalog-filter-group-2 .catalog-filter-group {
+  height: 151px;
+  width: 140px;
+}
+
+.catalog-filter-group-2 .catalog-filter-title {
+  margin-bottom: 30px;
+}
+
+.catalog-filter-group-3 .catalog-filter-title {
+  margin-bottom: 34px;
+}
+
+.catalog-filter-price {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.product-card-type-string-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-type-string-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-type-string-3 {
+  display: flex;
+  justify-content: space-between;
 }
