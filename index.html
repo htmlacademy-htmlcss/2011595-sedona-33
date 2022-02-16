@@ -26,14 +26,14 @@
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list-user">
+      <ul class="navigation-list navigation-list-user">
         <li class="navigation-item">
-          <a class="navigation-link-search" href="#">
+          <a class="navigation-link navigation-link-search" href="#">
             <span class="visually-hidden">Поиск.</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-favorites" href="#">
+          <a class="navigation-link navigation-link-favorites" href="#">
             <span class="visually-hidden">
               Избранное.
             </span>
@@ -74,7 +74,7 @@
           alt="Фотография города Седона с фасадами зданий и горами на заднем фоне.">
       </div>
       <ul class="advantage-list">
-        <li class="advantage-item-dark-grey">
+        <li class="advantage-item-with-pic advantage-item-dark-grey">
           <img class="advantage-title-pic" src="images/icons/icon-house.svg" width="75" height="72" alt="Дом.">
           <h3 class="advantage-title">
             ЖИЛЬЁ
@@ -85,7 +85,7 @@
             всё как в кино!
           </p>
         </li>
-        <li class="advantage-item-white">
+        <li class="advantage-item-with-pic advantage-item-white">
           <img class="advantage-title-pic" src="images/icons/icon-burger.svg" width="74" height="70" alt="Бургер.">
           <h3 class="advantage-title">
             ЕДА
@@ -96,7 +96,7 @@
             вы не разочаруетесь!
           </p>
         </li>
-        <li class="advantage-item-dark-grey present">
+        <li class="advantage-item-with-pic advantage-item-dark-grey present">
           <img class="advantage-title-pic" src="images/icons/icon-present.svg" width="64" height="76"
             alt="Подарочная коробка с лентой.">
           <h3 class="advantage-title">
@@ -127,7 +127,7 @@
         </div>
       </div>
       <ul class="advantage-list">
-        <li class="advantage-item-white-grey advantage-pos3">
+        <li class="advantage-item-3-5 advantage-item-white-grey">
           <h3 class="advantage-title">
             НЕБОЛЬШАЯ <br> ПЛОЩАДЬ
           </h3>
@@ -139,7 +139,7 @@
             находятся очень близко
           </p>
         </li>
-        <li class="advantage-item-blue-gray">
+        <li class="advantage-item-3-5 advantage-item-blue-gray">
           <h3 class="advantage-title">
             КРАСИВАЯ <br> ДОРОГА
           </h3>
@@ -151,7 +151,7 @@
             совсем не скучно!
           </p>
         </li>
-        <li class="advantage-item-white-grey advantage-pos5">
+        <li class="advantage-item-3-5 advantage-item-white-grey">
           <h3 class="advantage-title">
             МАЛО <br> ТУРИСТОВ
           </h3>
@@ -173,27 +173,31 @@
         Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <button class="btn-search" type="button">Поиск гостиницы в Седоне</button>
+      <div>
+        <button class="btn-search" type="button">Поиск гостиницы в Седоне</button>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <section class="footer-distribution">
-      <h2 class="distribution-title">
-        ПОДПИШИТЕСЬ НА РАССЫЛКУ
-      </h2>
-      <p class="distribution-text">
-        Только полезная информация и никакого спама, <br>
-        честное бойскаутское!
-      </p>
-      <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="white-email" class="visually-hidden">
-          Ваш e-mail. </label>
-        <input class="distribution-write" id="white-email" type="email" name="distribution-email"
-          placeholder="Ваш e-mail">
-        <button class="button-distribution" type="submit">
-          Подписаться
-        </button>
-      </form>
+      <div class="footer-distribution-container">
+        <h2 class="distribution-title">
+          ПОДПИШИТЕСЬ НА РАССЫЛКУ
+        </h2>
+        <p class="distribution-text">
+          Только полезная информация и никакого спама, <br>
+          честное бойскаутское!
+        </p>
+        <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="white-email" class="visually-hidden">
+            Ваш e-mail. </label>
+          <input class="distribution-write" id="white-email" type="email" name="distribution-email"
+            placeholder="Ваш e-mail">
+          <button class="button-distribution" type="submit">
+            Подписаться
+          </button>
+        </form>
+      </div>
     </section>
     <div class="page-footer-container">
       <section class="footer-social">
@@ -221,7 +225,8 @@
       </div>
       <p class="footer-html-academy">
         <a class="footer-html-academy-pic" href="https://htmlacademy.ru/">
-          <img src="images/footer/logo-htmlacademy.svg" width="115" height="34" alt="Разработано HTML академией.">
+          <img class="footer-html-academy-picture" src="images/footer/logo-htmlacademy.svg" width="115" height="34"
+            alt="Разработано HTML академией.">
         </a>
       </p>
     </div>

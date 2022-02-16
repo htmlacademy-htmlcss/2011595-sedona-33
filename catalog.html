@@ -25,14 +25,14 @@
           <a class="navigation-link navigation-link-current" href="">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list-user">
+      <ul class="navigation-list navigation-list-user">
         <li class="navigation-item">
-          <a class="navigation-link-search" href="#">
+          <a class="navigation-link navigation-link-search" href="#">
             <span class="visually-hidden">Поиск.</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-favorites" href="#">
+          <a class="navigation-link navigation-link-favorites" href="#">
             <span class="visually-hidden">
               Избранное.
             </span>
@@ -101,14 +101,16 @@
           <div class="catalog-filter-group-3">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость,₽</legend>
-              <label for="catalog-price-min" class="visually-hidden">
-                Поле для ввода минимальной стоимости.
-              </label>
-              <input id="catalog-price-min" class="catalog-price" type="number" value="0" placeholder="от">
-              <label for="catalog-price-max" class="visually-hidden">
-                Поле для ввода максимальной стоимости.
-              </label>
-              <input id="catalog-price-max" class="catalog-price" type="number" value="9000" placeholder="до">
+              <div class="catalog-filter-price">
+                <label for="catalog-price-min" class="visually-hidden">
+                  Поле для ввода минимальной стоимости.
+                </label>
+                <input id="catalog-price-min" class="catalog-price" type="number" value="0" placeholder="от">
+                <label for="catalog-price-max" class="visually-hidden">
+                  Поле для ввода максимальной стоимости.
+                </label>
+                <input id="catalog-price-max" class="catalog-price" type="number" value="9000" placeholder="до">
+              </div>
               <label class="visually-hidden" for="range1">
                 Ползунок для ввода минимальной и максимальной стоимости.
               </label>
@@ -151,66 +153,91 @@
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotels/hotel-amara.jpg" width="299" height="206"
               alt="Фотография гостиницы Amara Resort & Spa находящей на высоте в горах.">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
-          <p class="product-card-type">Гостиница</p>
-          <p class="product-card-type">От 4000 ₽</p>
-          <a class="product-card-button" href="#">Подробнее</a>
-          <button class="button-favorites" type="button">
-            В избранное
-          </button>
-          <img class="hotel-rating-pic" src="images/hotels/stars4.svg" width="91" height="17" alt="четыре звезды.">
-          <p class="hotel-rating">Рейтинг 8,5</p>
+          <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          <div class="product-card-type-string-1">
+            <p class="product-card-type">Гостиница</p>
+            <p class="product-card-type">От 4000 ₽</p>
+          </div>
+          <div class="product-card-type-string-2">
+            <a class="product-card-button" href="#">Подробнее</a>
+            <button class="button-favorites" type="button">
+              В избранное
+            </button>
+          </div>
+          <div class="product-card-type-string-3">
+            <img class="hotel-rating-pic" src="images/hotels/stars4.svg" width="91" height="17" alt="четыре звезды.">
+            <p class="hotel-rating">Рейтинг 8,5</p>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotels/hotel-desert.jpg" width="299" height="206"
               alt="Фотография вида на горы из гостиницы Desert Quail Inn.">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
-          <p class="product-card-type">Гостиница</p>
-          <p class="product-card-type">От 3000 ₽</p>
-          <a class="product-card-button " href="#">Подробнее</a>
-          <button class="button-favorites" type="button">
-            В избранное
-          </button>
-          <img class="hotel-rating-pic" src="images/hotels/stars3.svg" width="68" height="17" alt="три звезды.">
-          <p class="hotel-rating">Рейтинг 8,9</p>
+          <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          <div class="product-card-type-string-1">
+            <p class="product-card-type">Гостиница</p>
+            <p class="product-card-type">От 3000 ₽</p>
+          </div>
+          <div class="product-card-type-string-2">
+            <a class="product-card-button " href="#">Подробнее</a>
+            <button class="button-favorites" type="button">
+              В избранное
+            </button>
+          </div>
+          <div class="product-card-type-string-3">
+            <img class="hotel-rating-pic" src="images/hotels/stars3.svg" width="68" height="17" alt="три звезды.">
+            <p class="hotel-rating">Рейтинг 8,9</p>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotels/hotel-villas.jpg" width="299" height="206"
               alt="Фотография фасада здания гостиницы Villas at Poco Diablo с городом и горами на заднем фоне.">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-          <p class="product-card-type">Гостиница</p>
-          <p class="product-card-type">От 2000 ₽</p>
-          <a class="product-card-button" href="#">Подробнее</a>
-          <button class="button-favorites" type="button">
-            В избранное
-          </button>
-          <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
-          <p class="hotel-rating">Рейтинг 9,2</p>
+          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+
+          <div class="product-card-type-string-1">
+            <p class="product-card-type">Гостиница</p>
+            <p class="product-card-type">От 2000 ₽</p>
+          </div>
+          <div class="product-card-type-string-2">
+            <a class="product-card-button" href="#">Подробнее</a>
+            <button class="button-favorites" type="button">
+              В избранное
+            </button>
+          </div>
+          <div class="product-card-type-string-3">
+            <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
+            <p class="hotel-rating">Рейтинг 9,2</p>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotels/hotel-green-tree.jpg" width="299" height="206"
               alt="Фотография вида на долину с дорогой из гостиницы GreenTree Inn.">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
-          <p class="product-card-type">Гостиница</p>
-          <p class="product-card-type">От 3000 ₽</p>
-          <a class="product-card-button button" href="#">Подробнее</a>
-          <button class="button button-favorites" type="button">
-            В избранное
-          </button>
-          <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
-          <p class="hotel-rating">Рейтинг 9,2</p>
+          <h3 class="hotel-card-title">GreenTree Inn</h3>
+          <div class="product-card-type-string-1">
+            <p class="product-card-type">Гостиница</p>
+            <p class="product-card-type">От 3000 ₽</p>
+          </div>
+          <div class="product-card-type-string-2">
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button class="button button-favorites" type="button">
+              В избранное
+            </button>
+          </div>
+          <div class="product-card-type-string-3">
+            <img class="hotel-rating-pic" src="images/hotels/stars2.svg" width="43" height="17" alt="две звезды.">
+            <p class="hotel-rating">Рейтинг 9,2</p>
+          </div>
         </li>
       </ul>
-        <button class="button-load-more" type="button">
-          ЗАГРУЗИТЬ ЕЩЁ
-        </button>
+      <button class="button-load-more" type="button">
+        ЗАГРУЗИТЬ ЕЩЁ
+      </button>
       <div class="pagination-container-main">
         <ul class="pagination">
           <li class="pagination-item pagination-item-first">
