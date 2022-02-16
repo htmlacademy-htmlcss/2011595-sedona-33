@@ -220,6 +220,10 @@ body {
   display: block;
 }
 
+.navigation-logo {
+  line-height: 0;
+}
+
 .page-header-logo {
   margin-right: 30px;
 }
@@ -376,6 +380,7 @@ body {
   padding-right: 0;
   padding-top: 49px;
   padding-bottom: 53px;
+  column-gap: 30px;
 }
 
 .advantage-item-dark-grey {
@@ -504,6 +509,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
+  line-height: 0;
+}
+
+.footer-html-academy-picture {
+  display: block;
 }
 
 .footer-html-academy-pic {
@@ -527,16 +537,16 @@ body {
 .button-social {
   width: 18px;
   height: 15px;
+  display: block;
+  line-height: 0;
 }
 
 .footer-social-item {
   width: 20px;
   height: 16px;
   list-style-type: none;
-}
-
-.footer-social-item:not(:last-child) {
-  margin-right: 30px;
+  line-height: 0;
+  display: block;
 }
 
 .button-twitter {
@@ -546,12 +556,14 @@ body {
 }
 
 .button-youtube {
+
   background-image: url("../images/footer/social-youtube.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .button-facebook {
+
   background-image: url("../images/footer/social-facebook.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -594,16 +606,17 @@ body {
 }
 
 .inner-header-title {
-  margin: 35px 0 5px 0;
+  padding-top: 35px;
+  margin: 0px 0 5px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  display: block;
 }
 
 .main-inner-filter {
   width: 1060px;
-  display: flex;
   padding-left: 70px;
   padding-right: 70px;
   height: 408px;
@@ -612,7 +625,7 @@ body {
   background-image: url("../images/largepic/catalog-background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  flex-direction: column;
+  margin: 0;
 }
 
 .catalog-filter-title {
@@ -679,6 +692,11 @@ body {
   text-decoration: none;
 }
 
+.hotel-card-image {
+  display: block;
+}
+
+
 .hotel-card-title {
   text-decoration: none;
   font-weight: 700;
@@ -740,6 +758,10 @@ body {
   border-radius: 4px;
 }
 
+.footer-distribution-container {
+  padding: 94px 200px;
+}
+
 .footer-distribution-catalog {
   margin: 0 auto;
   text-align: center;
@@ -763,6 +785,7 @@ body {
   color: #333333;
   background-color: #ffffff;
   margin: 0;
+
 }
 
 .distribution-text-catalog {
@@ -789,21 +812,19 @@ body {
 .pagination {
   display: flex;
   width: 370px;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  column-gap: 8px;
 }
 
 .hotel-cards-list {
-  height: 886px;
   flex-wrap: wrap;
-  justify-content: space-between;
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  align-content: space-between;
+  gap: 10px 20px;
 }
 
 .logo {
@@ -854,12 +875,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.inner-header {
-  display: flex;
-  flex-direction: column;
-}
-
 
 .catalog-filter-group-1 .catalog-filter-group {
   height: 151px;
