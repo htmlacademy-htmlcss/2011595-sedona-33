@@ -277,17 +277,121 @@ body {
   position: relative;
 }
 
-.navigation-list-menu .navigation-link {
-  display: block;
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  padding: 20px 21px 20px 15px;
-  letter-spacing: -2px;
-  position: relative;
+.navigation-list-menu .navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-list-menu .navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-link:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-link:active .navigation-icon {
+  fill: rgba(117, 98, 87, 0.3);
+  ;
+}
+
+.navigation-link:active .circle-icon {
+  fill: rgba(252, 252, 252, 0.3);
+}
+
+.header-button:hover {
+  background: #615048;
+}
+
+.header-button:active {
+  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-button:focus {
+  outline: 3px solid #83B3D3;
+
+}
+
+.footer-number-nolink:hover {
+  color: #756257;
+}
+
+.footer-number-nolink:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.footer-number-nolink:focus {
+  outline: 3px solid #83B3D3;
+
+}
+
+
+.btn-search:hover {
+  background: #615048;
+}
+
+.btn-search:active {
+  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-search:focus {
+  outline: 3px solid #83B3D3;
+
+}
+
+.distribution-write:hover {
+  background: #E6E6E6;
+}
+
+.distribution-write:invalid {
+  outline: 2px solid #FF5757;
+}
+
+.distribution-write:focus {
+  outline: 3px solid #83B3D3;
+  background: #E6E6E6;
+}
+
+.button-distribution:hover {
+  background: #68A2CA;
+}
+
+.button-distribution:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-distribution:focus {
+  outline: 3px solid #756257;
+}
+
+.button-social:hover .social-icon {
+  fill: #68A2CA;
+}
+
+.button-social:active .social-icon {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
+.button-social:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.footer-html-academy-pic:hover .html-academy-pic {
+  fill: #756257;
+}
+
+.footer-html-academy-pic:active .html-academy-pic {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.footer-html-academy-pic:focus {
+  fill: #756257;
+  outline: 3px solid #83B3D3;
 }
 
 .navigation-list-user .navigation-item-icon {
@@ -572,8 +676,8 @@ body {
 
 .footer-html-academy-pic {
   display: block;
-  padding-top: 42px;
-  padding-bottom: 44px;
+  margin-top: 42px;
+  margin-bottom: 44px;
 }
 
 .advantage-number {
