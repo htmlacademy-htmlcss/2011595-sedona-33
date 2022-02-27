@@ -418,7 +418,7 @@ body {
   padding: 0;
   display: block;
   position: absolute;
-  bottom: 72px;
+  bottom: 0%;
 }
 
 .navigation-list-menu .navigation-link-current {
@@ -770,6 +770,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0;
+  position: relative;
+  bottom: 5px;
+  z-index: 0;
 }
 
 .catalog-filter-title {
@@ -825,7 +828,7 @@ body {
 .hotel-card {
   list-style-type: none;
   display: grid;
-  grid-template-rows: 226px min-content 23px 37px 37px 20px;
+  grid-template-rows: 226px min-content 23px 37px 37px 4px;
   grid-template-columns: 20px 300px 20px;
   row-gap: 16px;
 }
