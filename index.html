@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
-
 
 <body>
   <header class="page-header">
@@ -77,7 +77,7 @@
             НАСТОЯЩИЙ <br> ГОРОДОК
           </h3>
           <span class="advantage-number">
-            <pre>- №1 -</pre>
+            - №1 -
           </span>
           <p class="advantage-description">
             Седона - не аттракцион <br>
@@ -286,7 +286,7 @@
               </svg>
             </label>
             <input class="enter-date-field" type="text" id="arrival-date-id" name="arrival-date"
-              placeholder="27 апреля 2020">
+              placeholder="Укажите дату">
             <span class="under-text under-text-error">
               Мы не можем отправить вас в прошлое.
             </span>
@@ -304,7 +304,7 @@
               </svg>
             </label>
             <input class="enter-date-field" type="text" id="departure-date-id" name="departure-date"
-              placeholder="1 сентября 2021">
+              placeholder="Укажите дату">
             <span class="under-text">
               На эти даты есть свободные номера. Пока есть.
             </span>
@@ -313,31 +313,45 @@
             <div class="field-group-count">
               <label class="field-group-adults" for="adults">Взрослые:
               </label>
-              <div class="counter-container">
-                <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
+              <div class="counter-container counter-container-adults">
                 <input class="counter" type="text" id="adults" name="number-adults" placeholder="2">
-                <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
+                <button class="btn-minus">
+                  <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="minus-color" opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
+                </button>
+                <button class="btn-plus">
+                  <svg class="plus" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                    <path class="plus-color" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity="0.3" /></svg>
+                </button>
               </div>
             </div>
             <div class="field-group-count">
-              <label class="field-group-childs" for="childs">Дети:
-              </label>
-              <div class="counter-container">
-                <svg class="tultil" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
-                  <g clip-path="url(#a)" fill="#fff">
-                    <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" />
-                  </g>
-                  <defs>
-                  </defs>
-                </svg>
-                <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
+              <span class="form-label">
+                <label class="field-group-childs" for="childs">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
+                      <g clip-path="url(#a)" fill="#fff">
+                        <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" />
+                      </g>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <div class="counter-container counter-container-childs">
                 <input class="counter" type="text" id="childs" name="number-childs" placeholder="1">
-                <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
+                <button class="btn-minus">
+                  <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="minus-color" opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
+                </button>
+                <button class="btn-plus">
+                  <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="plus-color" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
+                </button>
               </div>
             </div>
           </div>

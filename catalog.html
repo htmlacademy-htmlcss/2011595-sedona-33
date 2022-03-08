@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -67,7 +68,7 @@
           <li>
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Перейти на главную страницу.</span>
-              <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="breadcrumbs-link-svg" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff" />
                 <path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff" /></svg>
             </a>
@@ -188,7 +189,7 @@
           <option value="cheap">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button button-search">
+        <a href="#" class="button button-search button-search-current">
           <span class="visually-hidden">Показать карточки гостиниц.</span>
           <svg width="16" height="14" class="button-search-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
@@ -273,8 +274,8 @@
             <a class="product-card-button" href="#">
               <span class="product-card-button-text">Подробнее</span>
             </a>
-            <button class="button-favorites" type="button">
-              В избранное
+            <button class="button-favorites button-favorites-current" type="button">
+              В избранном
             </button>
           </div>
           <div class="product-card-type-string-3">
@@ -432,87 +433,6 @@
       </p>
     </div>
   </footer>
-  <div class="modal-container modal-container-close">
-    <div class="modal modal-search">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <section class="modal-content">
-        <h2 class="modal-title">ПОИСК ГОСТИНИЦ В СЕДОНЕ</h2>
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
-            <label class="enter-date" for="arrival-date-id">Дата заезда:
-              <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity=".3" fill="#000">
-                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
-                  <path
-                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
-                  <path
-                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
-                </g>
-              </svg>
-            </label>
-            <input class="enter-date-field" type="text" id="arrival-date-id" name="arrival-date"
-              placeholder="27 апреля 2020">
-            <span class="under-text under-text-error">
-              Мы не можем отправить вас в прошлое.
-            </span>
-          </p>
-          <p class="field-group">
-            <label class="enter-date" for="departure-date-id">Дата выезда:
-              <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity=".3" fill="#000">
-                  <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
-                  <path
-                    d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" />
-                  <path
-                    d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
-                </g>
-              </svg>
-            </label>
-            <input class="enter-date-field" type="text" id="departure-date-id" name="departure-date"
-              placeholder="1 сентября 2021">
-            <span class="under-text">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
-          </p>
-          <div class="field-group-count-container">
-            <div class="field-group-count">
-              <label class="field-group-adults" for="adults">Взрослые:
-              </label>
-              <div class="counter-container">
-                <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
-                <input class="counter" type="text" id="adults" name="number-adults" placeholder="2">
-                <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
-              </div>
-            </div>
-            <div class="field-group-count">
-              <label class="field-group-childs" for="childs">Дети:
-              </label>
-              <div class="counter-container">
-                <svg class="tultil" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
-                  <g clip-path="url(#a)" fill="#fff">
-                    <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" />
-                  </g>
-                  <defs>
-                  </defs>
-                </svg>
-                <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
-                <input class="counter" type="text" id="childs" name="number-childs" placeholder="1">
-                <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
-              </div>
-            </div>
-          </div>
-          <button class="modal-search-btn" type="button">Найти</button>
-        </form>
-      </section>
-    </div>
-  </div>
 </body>
 
 </html>
