@@ -1290,13 +1290,17 @@ img{
   outline: 3px solid #83B3D3;
   border-radius: 3px;
 }
-
-.catalog-filter-group-1:focus-within .control-mark {
+.control-mark:focus-within {
   outline: 3px solid #83B3D3;
   border-radius: 3px;
 }
 
-.catalog-filter-group-2:focus-within .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark{
+  outline: 3px solid #83B3D3;
+  border-radius: 3px;
+}
+
+.control-input[type="radio"]:focus + .control-mark{
   outline: 3px solid #83B3D3;
 }
 
