@@ -117,7 +117,7 @@ body {
 }
 
 .distribution-write {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 22px;
   margin: 0px 0px 0px 0px;
   font: inherit;
   width: 600px;
@@ -127,14 +127,13 @@ body {
   border: none;
 }
 
-::placeholder {
+.distribution-write::placeholder {
   font-size: 18px;
   line-height: 26px;
   display: flex;
   align-items: center;
   color: #000000;
   opacity: 0.6;
-  padding-left: 22px;
 }
 
 img {
@@ -1372,7 +1371,6 @@ img {
 
 .catalog-price-first:focus {
   outline: 3px solid #68a2ca;
-  border: 2px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81b3d2;
   border-radius: 4px 0px 0px 4px;
@@ -1380,10 +1378,19 @@ img {
 
 .catalog-price-second:focus {
   outline: 3px solid #68a2ca;
-  border: 2px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81b3d2;
   border-radius: 0px 4px 4px 0px;
+}
+
+.catalog-price-second:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-left-width: 0;
+}
+
+.catalog-price-first:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-right-width: 0;
 }
 
 .pagination-link:hover {
@@ -1417,10 +1424,6 @@ img {
 .pagination-current:focus {
   outline: 3px solid #756257;
   background: #68a2ca;
-}
-
-.catalog-price:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 .catalog-price:active {
@@ -1647,6 +1650,7 @@ img {
   border-radius: 4px;
   position: relative;
   top: -4px;
+  background-color: #ffffff;
 }
 
 .hotel-card {
