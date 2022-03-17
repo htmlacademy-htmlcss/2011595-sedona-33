@@ -1742,6 +1742,7 @@ img {
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .footer-distribution-container {
