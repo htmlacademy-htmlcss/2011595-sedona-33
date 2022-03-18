@@ -12,7 +12,7 @@
   <div class="shadow">
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
+        <a class="navigation-logo">
           <img class="page-header-logo" src="images/header/logo.svg" width="139" height="70"
             alt="Главный логотип сайта Седона.">
         </a>
@@ -268,7 +268,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -287,7 +287,7 @@
                 </svg>
               </label>
               <input class="enter-date-field" type="text" id="arrival-date-id" name="arrival-date"
-                placeholder="Укажите дату">
+                placeholder="Укажите дату" required>
               <span class="under-text under-text-error">
                 Мы не можем отправить вас в прошлое.
               </span>
@@ -305,7 +305,7 @@
                 </svg>
               </label>
               <input class="enter-date-field" type="text" id="departure-date-id" name="departure-date"
-                placeholder="Укажите дату">
+                placeholder="Укажите дату" required>
               <span class="under-text">
                 На эти даты есть свободные номера. Пока есть.
               </span>
@@ -315,12 +315,12 @@
                 <label class="field-group-adults" for="adults">Взрослые:
                 </label>
                 <div class="counter-container counter-container-adults">
-                  <input class="counter" type="text" id="adults" name="number-adults" placeholder="2">
-                  <button class="btn-minus">
+                  <input class="counter" type="text" id="adults" name="number-adults" placeholder="2" required>
+                  <button class="btn-minus" type="button">
                     <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="minus-color" opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
                   </button>
-                  <button class="btn-plus">
+                  <button class="btn-plus" type="button">
                     <svg class="plus" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                       <path class="plus-color" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity="0.3" /></svg>
                   </button>
@@ -346,18 +346,18 @@
                 </span>
                 <div class="counter-container counter-container-children">
                   <input class="counter" type="text" id="children" name="number-children" placeholder="1">
-                  <button class="btn-minus">
+                  <button class="btn-minus" type="button">
                     <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="minus-color" opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" /></svg>
                   </button>
-                  <button class="btn-plus">
+                  <button class="btn-plus" type="button">
                     <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="plus-color" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3" /></svg>
                   </button>
                 </div>
               </div>
             </div>
-            <button class="modal-search-btn" type="button">Найти</button>
+            <button class="modal-search-btn" type="submit">Найти</button>
           </form>
         </section>
       </div>
