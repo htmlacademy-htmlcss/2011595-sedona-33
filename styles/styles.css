@@ -2132,7 +2132,8 @@ img {
 }
 
 .footer-distribution-container {
-  padding: 93px 200px 93px 200px;
+  padding: 93px 70px 93px 71px;
+  width: 1060px;
 }
 
 .footer-distribution-catalog {
