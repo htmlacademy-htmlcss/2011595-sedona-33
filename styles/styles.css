@@ -196,7 +196,6 @@ body {
 
 img {
   max-width: 100%;
-  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -1924,7 +1923,7 @@ img {
   position: relative;
   top: -4px;
   background-color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 23px;
@@ -2124,7 +2123,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 23px;
